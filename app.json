@@ -1,0 +1,17 @@
+{
+  "name": "Grot",
+  "description": "Bite my shiny metal ass...",
+  "keywords": [
+    "productivity",
+    "go",
+    "webhooks"
+  ],
+  "website": "http://bender-go.herokuapp.com/",
+  "repository": "https://github.com/Tonkpils/grot",
+  "scripts": {},
+  "env": {},
+  "image": "heroku/go:1.6",
+  "mount_dir": "src/github.com/Tonkpils/grot",
+  "addons": [],
+  "buildpacks": []
+}

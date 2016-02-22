@@ -1,0 +1,18 @@
+{
+	"ImportPath": "github.com/Tonkpils/chatbot",
+	"GoVersion": "go1.6",
+	"Packages": [
+		"./..."
+	],
+	"Deps": [
+		{
+			"ImportPath": "github.com/nlopes/slack",
+			"Comment": "v0.0.1-76-ga6a2e43",
+			"Rev": "a6a2e430fd2e1bc1f91c0fd538e5c2d0c898f5dc"
+		},
+		{
+			"ImportPath": "golang.org/x/net/websocket",
+			"Rev": "5d0a0f8cd486626821d2ba44d471ab1c9271d38f"
+		}
+	]
+}
