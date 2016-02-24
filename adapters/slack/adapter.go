@@ -1,9 +1,10 @@
-package grot
+package slack
 
 import (
 	"log"
 	"os"
 
+	"github.com/Tonkpils/grot"
 	"github.com/nlopes/slack"
 )
 
@@ -13,7 +14,7 @@ func init() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	RegisterChatAdapter(adapter)
+	grot.RegisterChatAdapter(adapter)
 }
 
 type SlackAdapter struct {
@@ -45,7 +46,7 @@ func (s *SlackAdapter) Send(msg string) error {
 	return nil
 }
 
-func (s *SlackAdapter) Receive(bot *Bot) error {
+func (s *SlackAdapter) Receive(bot *grot.Bot) error {
 	go s.ManageConnection()
 
 Loop:
