@@ -1,4 +1,4 @@
-package main
+package grot
 
 import (
 	"log"
