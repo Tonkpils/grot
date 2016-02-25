@@ -22,8 +22,9 @@ func RegisterChatAdapter(adapter ChatAdapter) {
 
 type ChatAdapter interface {
 	// Send is used to send a message to the chat source from the robot.
-	// This will be used by listeners to respond to messages
-	Send(message string) error
+	// Takes a Response which contains metadata about the message origin
+	// and a message string.
+	Send(*Response, string) error
 	// Receive ensures the adapter begins listening on the chat source.
 	Receive(bot *Bot) error
 }
